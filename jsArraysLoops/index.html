@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<div id = 'display'></div>
+
+
+<script>
+	var color = ['Blue ', 'Green', 'Red', 'Orange', 'Violet', 'Indigo', 'Yellow'];
+	var o = ['th', 'st', 'nd', 'rd'];
+
+	for(var i = 0; i < color.length; i++){
+		var a = document.createElement('p')
+		if (i == 0 ){
+			a.innerHTML += ((i+1) + o[1] + ' choice is ' + color[i]) + '<br>' ;
+			a.style.color=color[i]
+			document.getElementById('display').appendChild(a)
+		}
+	else if (i == 1 ){
+			a.innerHTML += ((i+1) + o[2] + ' choice is ' + color[i]) + '<br>' ;
+			a.style.color=color[i]
+			document.getElementById('display').appendChild(a)
+	}else if (i == 2 ){
+			a.innerHTML += ((i+1) + o[3] + ' choice is ' + color[i]) + '<br>' ;
+			a.style.color=color[i]
+			document.getElementById('display').appendChild(a)
+	}else{
+			a.innerHTML += ((i+1) + o[0] + ' choice is ' + color[i]) + '<br>' ;
+			a.style.color=color[i]
+			document.getElementById('display').appendChild(a)
+
+	}
+
+	}
+
+
+</script>
+</body>
+</html>
