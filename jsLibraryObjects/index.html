@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+</head>
+<body>
+	<h1 id='readIt'></h1>
+	<h1 id='haveNotRead'></h1>
+	<script>
+		
+		var library = [
+		 { author: 'Bill Gates', title: 'The Road Ahead', readingStatus: true },
+		 { author: 'Steve Jobs', title: 'Walter Isaacson', readingStatus: true },
+		 { author: 'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', readingStatus: false }
+		];
+
+		for(let x of library)
+			if(x.readingStatus){
+				document.getElementById('readIt').innerHTML += " You've read: " + x.title + " by " + x.author + '<br>'; 
+			}else{
+				document.getElementById('haveNotRead').innerHTML += " You haven't read: " + x.title + " by " + x.author + '<br>';
+			}
+
+
+			
+		
+	</script>
+
+</body>
+</html>
